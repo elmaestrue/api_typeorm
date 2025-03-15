@@ -6,6 +6,7 @@ interface ValidationResult {
     value: any;
 }
 
+
 const validateRequest = (req: Request, next : NextFunction, schema: Schema): Response | void => {
     const options: ValidationOptions = {
         abortEarly: false,
